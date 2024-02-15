@@ -1,0 +1,2290 @@
+{
+  "contractName": "Diploma",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addDocHash",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "findDocHash",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"}],\"name\":\"addDocHash\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"}],\"name\":\"findDocHash\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Diploma.sol\":\"Diploma\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Diploma.sol\":{\"keccak256\":\"0xe326af286bc32b0026c3b272b9995610a12e4e0e7b6034c79f0a4ee4b2509c25\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be5536f95a73e29b42889014737b00ee6651a4073d416102f8c778bbb9bd1015\",\"dweb:/ipfs/QmVoKogfi3voz9qjhznVueyfd466QXYmeKDmGU3raNcPcu\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101e7806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063133a48f31461003b5780634cf00d3f14610057575b600080fd5b61005560048036038101906100509190610142565b610088565b005b610071600480360381019061006c9190610142565b6100cf565b60405161007f929190610188565b60405180910390f35b600060405180604001604052804281526020014381525090508060008084815260200190815260200160002060008201518160000155602082015181600101559050505050565b600080600080848152602001908152602001600020600001546000808581526020019081526020016000206001015491509150915091565b600080fd5b6000819050919050565b61011f8161010c565b811461012a57600080fd5b50565b60008135905061013c81610116565b92915050565b60006020828403121561015857610157610107565b5b60006101668482850161012d565b91505092915050565b6000819050919050565b6101828161016f565b82525050565b600060408201905061019d6000830185610179565b6101aa6020830184610179565b939250505056fea26469706673582212204dcabcf65b9bc2a34d6f90d7ea008dd8f2504d126c935767d2764f15329067ba64736f6c634300080b0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063133a48f31461003b5780634cf00d3f14610057575b600080fd5b61005560048036038101906100509190610142565b610088565b005b610071600480360381019061006c9190610142565b6100cf565b60405161007f929190610188565b60405180910390f35b600060405180604001604052804281526020014381525090508060008084815260200190815260200160002060008201518160000155602082015181600101559050505050565b600080600080848152602001908152602001600020600001546000808581526020019081526020016000206001015491509150915091565b600080fd5b6000819050919050565b61011f8161010c565b811461012a57600080fd5b50565b60008135905061013c81610116565b92915050565b60006020828403121561015857610157610107565b5b60006101668482850161012d565b91505092915050565b6000819050919050565b6101828161016f565b82525050565b600060408201905061019d6000830185610179565b6101aa6020830184610179565b939250505056fea26469706673582212204dcabcf65b9bc2a34d6f90d7ea008dd8f2504d126c935767d2764f15329067ba64736f6c634300080b0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:1567:2",
+        "statements": [
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "47:35:2",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "57:19:2",
+                  "value": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "73:2:2",
+                        "type": "",
+                        "value": "64"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mload",
+                      "nodeType": "YulIdentifier",
+                      "src": "67:5:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "67:9:2"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "memPtr",
+                      "nodeType": "YulIdentifier",
+                      "src": "57:6:2"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "allocate_unbounded",
+            "nodeType": "YulFunctionDefinition",
+            "returnVariables": [
+              {
+                "name": "memPtr",
+                "nodeType": "YulTypedName",
+                "src": "40:6:2",
+                "type": ""
+              }
+            ],
+            "src": "7:75:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "177:28:2",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "194:1:2",
+                        "type": "",
+                        "value": "0"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "197:1:2",
+                        "type": "",
+                        "value": "0"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "revert",
+                      "nodeType": "YulIdentifier",
+                      "src": "187:6:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "187:12:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "187:12:2"
+                }
+              ]
+            },
+            "name": "revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b",
+            "nodeType": "YulFunctionDefinition",
+            "src": "88:117:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "300:28:2",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "317:1:2",
+                        "type": "",
+                        "value": "0"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "320:1:2",
+                        "type": "",
+                        "value": "0"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "revert",
+                      "nodeType": "YulIdentifier",
+                      "src": "310:6:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "310:12:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "310:12:2"
+                }
+              ]
+            },
+            "name": "revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db",
+            "nodeType": "YulFunctionDefinition",
+            "src": "211:117:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "379:32:2",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "389:16:2",
+                  "value": {
+                    "name": "value",
+                    "nodeType": "YulIdentifier",
+                    "src": "400:5:2"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nodeType": "YulIdentifier",
+                      "src": "389:7:2"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_bytes32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "361:5:2",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nodeType": "YulTypedName",
+                "src": "371:7:2",
+                "type": ""
+              }
+            ],
+            "src": "334:77:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "460:79:2",
+              "statements": [
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "517:16:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "526:1:2",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "529:1:2",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nodeType": "YulIdentifier",
+                            "src": "519:6:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "519:12:2"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "519:12:2"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulIdentifier",
+                            "src": "483:5:2"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "name": "value",
+                                "nodeType": "YulIdentifier",
+                                "src": "508:5:2"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "cleanup_t_bytes32",
+                              "nodeType": "YulIdentifier",
+                              "src": "490:17:2"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "490:24:2"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "eq",
+                          "nodeType": "YulIdentifier",
+                          "src": "480:2:2"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "480:35:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "iszero",
+                      "nodeType": "YulIdentifier",
+                      "src": "473:6:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "473:43:2"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "470:63:2"
+                }
+              ]
+            },
+            "name": "validator_revert_t_bytes32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "453:5:2",
+                "type": ""
+              }
+            ],
+            "src": "417:122:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "597:87:2",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "607:29:2",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "offset",
+                        "nodeType": "YulIdentifier",
+                        "src": "629:6:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "calldataload",
+                      "nodeType": "YulIdentifier",
+                      "src": "616:12:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "616:20:2"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "value",
+                      "nodeType": "YulIdentifier",
+                      "src": "607:5:2"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "nodeType": "YulIdentifier",
+                        "src": "672:5:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "validator_revert_t_bytes32",
+                      "nodeType": "YulIdentifier",
+                      "src": "645:26:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "645:33:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "645:33:2"
+                }
+              ]
+            },
+            "name": "abi_decode_t_bytes32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "offset",
+                "nodeType": "YulTypedName",
+                "src": "575:6:2",
+                "type": ""
+              },
+              {
+                "name": "end",
+                "nodeType": "YulTypedName",
+                "src": "583:3:2",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "591:5:2",
+                "type": ""
+              }
+            ],
+            "src": "545:139:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "756:263:2",
+              "statements": [
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "802:83:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [],
+                          "functionName": {
+                            "name": "revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b",
+                            "nodeType": "YulIdentifier",
+                            "src": "804:77:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "804:79:2"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "804:79:2"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "dataEnd",
+                            "nodeType": "YulIdentifier",
+                            "src": "777:7:2"
+                          },
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "786:9:2"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "sub",
+                          "nodeType": "YulIdentifier",
+                          "src": "773:3:2"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "773:23:2"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "798:2:2",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "slt",
+                      "nodeType": "YulIdentifier",
+                      "src": "769:3:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "769:32:2"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "766:119:2"
+                },
+                {
+                  "nodeType": "YulBlock",
+                  "src": "895:117:2",
+                  "statements": [
+                    {
+                      "nodeType": "YulVariableDeclaration",
+                      "src": "910:15:2",
+                      "value": {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "924:1:2",
+                        "type": "",
+                        "value": "0"
+                      },
+                      "variables": [
+                        {
+                          "name": "offset",
+                          "nodeType": "YulTypedName",
+                          "src": "914:6:2",
+                          "type": ""
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "YulAssignment",
+                      "src": "939:63:2",
+                      "value": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "name": "headStart",
+                                "nodeType": "YulIdentifier",
+                                "src": "974:9:2"
+                              },
+                              {
+                                "name": "offset",
+                                "nodeType": "YulIdentifier",
+                                "src": "985:6:2"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "add",
+                              "nodeType": "YulIdentifier",
+                              "src": "970:3:2"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "970:22:2"
+                          },
+                          {
+                            "name": "dataEnd",
+                            "nodeType": "YulIdentifier",
+                            "src": "994:7:2"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "abi_decode_t_bytes32",
+                          "nodeType": "YulIdentifier",
+                          "src": "949:20:2"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "949:53:2"
+                      },
+                      "variableNames": [
+                        {
+                          "name": "value0",
+                          "nodeType": "YulIdentifier",
+                          "src": "939:6:2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "abi_decode_tuple_t_bytes32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "726:9:2",
+                "type": ""
+              },
+              {
+                "name": "dataEnd",
+                "nodeType": "YulTypedName",
+                "src": "737:7:2",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "749:6:2",
+                "type": ""
+              }
+            ],
+            "src": "690:329:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "1070:32:2",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "1080:16:2",
+                  "value": {
+                    "name": "value",
+                    "nodeType": "YulIdentifier",
+                    "src": "1091:5:2"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nodeType": "YulIdentifier",
+                      "src": "1080:7:2"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_uint256",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "1052:5:2",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nodeType": "YulTypedName",
+                "src": "1062:7:2",
+                "type": ""
+              }
+            ],
+            "src": "1025:77:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "1173:53:2",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "pos",
+                        "nodeType": "YulIdentifier",
+                        "src": "1190:3:2"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulIdentifier",
+                            "src": "1213:5:2"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "cleanup_t_uint256",
+                          "nodeType": "YulIdentifier",
+                          "src": "1195:17:2"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "1195:24:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "1183:6:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1183:37:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1183:37:2"
+                }
+              ]
+            },
+            "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "1161:5:2",
+                "type": ""
+              },
+              {
+                "name": "pos",
+                "nodeType": "YulTypedName",
+                "src": "1168:3:2",
+                "type": ""
+              }
+            ],
+            "src": "1108:118:2"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "1358:206:2",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "1368:26:2",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "1380:9:2"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1391:2:2",
+                        "type": "",
+                        "value": "64"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "1376:3:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1376:18:2"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "1368:4:2"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value0",
+                        "nodeType": "YulIdentifier",
+                        "src": "1448:6:2"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "1461:9:2"
+                          },
+                          {
+                            "kind": "number",
+                            "nodeType": "YulLiteral",
+                            "src": "1472:1:2",
+                            "type": "",
+                            "value": "0"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "add",
+                          "nodeType": "YulIdentifier",
+                          "src": "1457:3:2"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "1457:17:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+                      "nodeType": "YulIdentifier",
+                      "src": "1404:43:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1404:71:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1404:71:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value1",
+                        "nodeType": "YulIdentifier",
+                        "src": "1529:6:2"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "1542:9:2"
+                          },
+                          {
+                            "kind": "number",
+                            "nodeType": "YulLiteral",
+                            "src": "1553:2:2",
+                            "type": "",
+                            "value": "32"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "add",
+                          "nodeType": "YulIdentifier",
+                          "src": "1538:3:2"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "1538:18:2"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+                      "nodeType": "YulIdentifier",
+                      "src": "1485:43:2"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1485:72:2"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1485:72:2"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_uint256_t_uint256__to_t_uint256_t_uint256__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "1322:9:2",
+                "type": ""
+              },
+              {
+                "name": "value1",
+                "nodeType": "YulTypedName",
+                "src": "1334:6:2",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "1342:6:2",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "1353:4:2",
+                "type": ""
+              }
+            ],
+            "src": "1232:332:2"
+          }
+        ]
+      },
+      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_uint256_t_uint256__to_t_uint256_t_uint256__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n    }\n\n}\n",
+      "id": 2,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "60:509:0:-:0;;;218:22;;;;;;;;;;60:509;;;;;;",
+  "deployedSourceMap": "60:509:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;248:161;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;417:149;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;248:161;300:23;326:37;;;;;;;;333:15;326:37;;;;350:12;326:37;;;300:63;;392:9;374;:15;384:4;374:15;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;;289:120;248:161;:::o;417:149::-;473:4;479;504:9;:15;514:4;504:15;;;;;;;;;;;:24;;;530:9;:15;540:4;530:15;;;;;;;;;;;:27;;;496:62;;;;417:149;;;:::o;88:117:2:-;197:1;194;187:12;334:77;371:7;400:5;389:16;;334:77;;;:::o;417:122::-;490:24;508:5;490:24;:::i;:::-;483:5;480:35;470:63;;529:1;526;519:12;470:63;417:122;:::o;545:139::-;591:5;629:6;616:20;607:29;;645:33;672:5;645:33;:::i;:::-;545:139;;;;:::o;690:329::-;749:6;798:2;786:9;777:7;773:23;769:32;766:119;;;804:79;;:::i;:::-;766:119;924:1;949:53;994:7;985:6;974:9;970:22;949:53;:::i;:::-;939:63;;895:117;690:329;;;;:::o;1025:77::-;1062:7;1091:5;1080:16;;1025:77;;;:::o;1108:118::-;1195:24;1213:5;1195:24;:::i;:::-;1190:3;1183:37;1108:118;;:::o;1232:332::-;1353:4;1391:2;1380:9;1376:18;1368:26;;1404:71;1472:1;1461:9;1457:17;1448:6;1404:71;:::i;:::-;1485:72;1553:2;1542:9;1538:18;1529:6;1485:72;:::i;:::-;1232:332;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Diploma {\r\n    struct Record {\r\n        uint mineTime;\r\n        uint blockNumber;\r\n    }\r\n\r\n    mapping(bytes32 => Record) private docHashes;\r\n\r\n    constructor() {\r\n    }\r\n\r\n    function addDocHash(bytes32 hash) public {\r\n        Record memory newRecord = Record(block.timestamp, block.number);\r\n        docHashes[hash] = newRecord;\r\n    }\r\n\r\n    function findDocHash(bytes32 hash) public view returns (uint, uint) {\r\n        return (docHashes[hash].mineTime, docHashes[hash].blockNumber);\r\n    }\r\n}",
+  "sourcePath": "C:\\Git\\eth-hash-chain\\contracts\\Diploma.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Diploma.sol",
+    "exportedSymbols": {
+      "Diploma": [
+        58
+      ]
+    },
+    "id": 59,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Diploma",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 58,
+        "linearizedBaseContracts": [
+          58
+        ],
+        "name": "Diploma",
+        "nameLocation": "69:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Diploma.Record",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "mineTime",
+                "nameLocation": "114:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "109:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "109:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "mutability": "mutable",
+                "name": "blockNumber",
+                "nameLocation": "138:11:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "133:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "133:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Record",
+            "nameLocation": "91:6:0",
+            "nodeType": "StructDefinition",
+            "scope": 58,
+            "src": "84:73:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 11,
+            "mutability": "mutable",
+            "name": "docHashes",
+            "nameLocation": "200:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 58,
+            "src": "165:44:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+              "typeString": "mapping(bytes32 => struct Diploma.Record)"
+            },
+            "typeName": {
+              "id": 10,
+              "keyType": {
+                "id": 7,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "173:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "165:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                "typeString": "mapping(bytes32 => struct Diploma.Record)"
+              },
+              "valueType": {
+                "id": 9,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 8,
+                  "name": "Record",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 6,
+                  "src": "184:6:0"
+                },
+                "referencedDeclaration": 6,
+                "src": "184:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Record_$6_storage_ptr",
+                  "typeString": "struct Diploma.Record"
+                }
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 14,
+              "nodeType": "Block",
+              "src": "232:8:0",
+              "statements": []
+            },
+            "id": 15,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "229:2:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:0"
+            },
+            "scope": 58,
+            "src": "218:22:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 36,
+              "nodeType": "Block",
+              "src": "289:120:0",
+              "statements": [
+                {
+                  "assignments": [
+                    22
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 22,
+                      "mutability": "mutable",
+                      "name": "newRecord",
+                      "nameLocation": "314:9:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 36,
+                      "src": "300:23:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Record_$6_memory_ptr",
+                        "typeString": "struct Diploma.Record"
+                      },
+                      "typeName": {
+                        "id": 21,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 20,
+                          "name": "Record",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 6,
+                          "src": "300:6:0"
+                        },
+                        "referencedDeclaration": 6,
+                        "src": "300:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Record_$6_storage_ptr",
+                          "typeString": "struct Diploma.Record"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 29,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 24,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967292,
+                          "src": "333:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "timestamp",
+                        "nodeType": "MemberAccess",
+                        "src": "333:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 26,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967292,
+                          "src": "350:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 27,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "number",
+                        "nodeType": "MemberAccess",
+                        "src": "350:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 23,
+                      "name": "Record",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "326:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Record_$6_storage_ptr_$",
+                        "typeString": "type(struct Diploma.Record storage pointer)"
+                      }
+                    },
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "326:37:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Record_$6_memory_ptr",
+                      "typeString": "struct Diploma.Record memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "300:63:0"
+                },
+                {
+                  "expression": {
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 30,
+                        "name": "docHashes",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "374:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                          "typeString": "mapping(bytes32 => struct Diploma.Record storage ref)"
+                        }
+                      },
+                      "id": 32,
+                      "indexExpression": {
+                        "id": 31,
+                        "name": "hash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17,
+                        "src": "384:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "374:15:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Record_$6_storage",
+                        "typeString": "struct Diploma.Record storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 33,
+                      "name": "newRecord",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22,
+                      "src": "392:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Record_$6_memory_ptr",
+                        "typeString": "struct Diploma.Record memory"
+                      }
+                    },
+                    "src": "374:27:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Record_$6_storage",
+                      "typeString": "struct Diploma.Record storage ref"
+                    }
+                  },
+                  "id": 35,
+                  "nodeType": "ExpressionStatement",
+                  "src": "374:27:0"
+                }
+              ]
+            },
+            "functionSelector": "133a48f3",
+            "id": 37,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addDocHash",
+            "nameLocation": "257:10:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17,
+                  "mutability": "mutable",
+                  "name": "hash",
+                  "nameLocation": "276:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37,
+                  "src": "268:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "267:14:0"
+            },
+            "returnParameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "289:0:0"
+            },
+            "scope": 58,
+            "src": "248:161:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 56,
+              "nodeType": "Block",
+              "src": "485:81:0",
+              "statements": [
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "expression": {
+                          "baseExpression": {
+                            "id": 46,
+                            "name": "docHashes",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 11,
+                            "src": "504:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                              "typeString": "mapping(bytes32 => struct Diploma.Record storage ref)"
+                            }
+                          },
+                          "id": 48,
+                          "indexExpression": {
+                            "id": 47,
+                            "name": "hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 39,
+                            "src": "514:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "504:15:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Record_$6_storage",
+                            "typeString": "struct Diploma.Record storage ref"
+                          }
+                        },
+                        "id": 49,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "mineTime",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 3,
+                        "src": "504:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "baseExpression": {
+                            "id": 50,
+                            "name": "docHashes",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 11,
+                            "src": "530:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                              "typeString": "mapping(bytes32 => struct Diploma.Record storage ref)"
+                            }
+                          },
+                          "id": 52,
+                          "indexExpression": {
+                            "id": 51,
+                            "name": "hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 39,
+                            "src": "540:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "530:15:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Record_$6_storage",
+                            "typeString": "struct Diploma.Record storage ref"
+                          }
+                        },
+                        "id": 53,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "blockNumber",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 5,
+                        "src": "530:27:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 54,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "503:55:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_uint256_$",
+                      "typeString": "tuple(uint256,uint256)"
+                    }
+                  },
+                  "functionReturnParameters": 45,
+                  "id": 55,
+                  "nodeType": "Return",
+                  "src": "496:62:0"
+                }
+              ]
+            },
+            "functionSelector": "4cf00d3f",
+            "id": 57,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "findDocHash",
+            "nameLocation": "426:11:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "mutability": "mutable",
+                  "name": "hash",
+                  "nameLocation": "446:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "438:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "437:14:0"
+            },
+            "returnParameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "473:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "473:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "479:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 43,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "472:12:0"
+            },
+            "scope": 58,
+            "src": "417:149:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 59,
+        "src": "60:509:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:536:0"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/Diploma.sol",
+    "exportedSymbols": {
+      "Diploma": [
+        58
+      ]
+    },
+    "id": 59,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Diploma",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 58,
+        "linearizedBaseContracts": [
+          58
+        ],
+        "name": "Diploma",
+        "nameLocation": "69:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Diploma.Record",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "mineTime",
+                "nameLocation": "114:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "109:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "109:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "mutability": "mutable",
+                "name": "blockNumber",
+                "nameLocation": "138:11:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "133:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "133:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Record",
+            "nameLocation": "91:6:0",
+            "nodeType": "StructDefinition",
+            "scope": 58,
+            "src": "84:73:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 11,
+            "mutability": "mutable",
+            "name": "docHashes",
+            "nameLocation": "200:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 58,
+            "src": "165:44:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+              "typeString": "mapping(bytes32 => struct Diploma.Record)"
+            },
+            "typeName": {
+              "id": 10,
+              "keyType": {
+                "id": 7,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "173:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "165:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                "typeString": "mapping(bytes32 => struct Diploma.Record)"
+              },
+              "valueType": {
+                "id": 9,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 8,
+                  "name": "Record",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 6,
+                  "src": "184:6:0"
+                },
+                "referencedDeclaration": 6,
+                "src": "184:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Record_$6_storage_ptr",
+                  "typeString": "struct Diploma.Record"
+                }
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 14,
+              "nodeType": "Block",
+              "src": "232:8:0",
+              "statements": []
+            },
+            "id": 15,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "229:2:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:0"
+            },
+            "scope": 58,
+            "src": "218:22:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 36,
+              "nodeType": "Block",
+              "src": "289:120:0",
+              "statements": [
+                {
+                  "assignments": [
+                    22
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 22,
+                      "mutability": "mutable",
+                      "name": "newRecord",
+                      "nameLocation": "314:9:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 36,
+                      "src": "300:23:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Record_$6_memory_ptr",
+                        "typeString": "struct Diploma.Record"
+                      },
+                      "typeName": {
+                        "id": 21,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 20,
+                          "name": "Record",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 6,
+                          "src": "300:6:0"
+                        },
+                        "referencedDeclaration": 6,
+                        "src": "300:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Record_$6_storage_ptr",
+                          "typeString": "struct Diploma.Record"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 29,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 24,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967292,
+                          "src": "333:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "timestamp",
+                        "nodeType": "MemberAccess",
+                        "src": "333:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 26,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967292,
+                          "src": "350:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 27,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "number",
+                        "nodeType": "MemberAccess",
+                        "src": "350:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 23,
+                      "name": "Record",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "326:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Record_$6_storage_ptr_$",
+                        "typeString": "type(struct Diploma.Record storage pointer)"
+                      }
+                    },
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "326:37:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Record_$6_memory_ptr",
+                      "typeString": "struct Diploma.Record memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "300:63:0"
+                },
+                {
+                  "expression": {
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 30,
+                        "name": "docHashes",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "374:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                          "typeString": "mapping(bytes32 => struct Diploma.Record storage ref)"
+                        }
+                      },
+                      "id": 32,
+                      "indexExpression": {
+                        "id": 31,
+                        "name": "hash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17,
+                        "src": "384:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "374:15:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Record_$6_storage",
+                        "typeString": "struct Diploma.Record storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 33,
+                      "name": "newRecord",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22,
+                      "src": "392:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Record_$6_memory_ptr",
+                        "typeString": "struct Diploma.Record memory"
+                      }
+                    },
+                    "src": "374:27:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Record_$6_storage",
+                      "typeString": "struct Diploma.Record storage ref"
+                    }
+                  },
+                  "id": 35,
+                  "nodeType": "ExpressionStatement",
+                  "src": "374:27:0"
+                }
+              ]
+            },
+            "functionSelector": "133a48f3",
+            "id": 37,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addDocHash",
+            "nameLocation": "257:10:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17,
+                  "mutability": "mutable",
+                  "name": "hash",
+                  "nameLocation": "276:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37,
+                  "src": "268:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "267:14:0"
+            },
+            "returnParameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "289:0:0"
+            },
+            "scope": 58,
+            "src": "248:161:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 56,
+              "nodeType": "Block",
+              "src": "485:81:0",
+              "statements": [
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "expression": {
+                          "baseExpression": {
+                            "id": 46,
+                            "name": "docHashes",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 11,
+                            "src": "504:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                              "typeString": "mapping(bytes32 => struct Diploma.Record storage ref)"
+                            }
+                          },
+                          "id": 48,
+                          "indexExpression": {
+                            "id": 47,
+                            "name": "hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 39,
+                            "src": "514:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "504:15:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Record_$6_storage",
+                            "typeString": "struct Diploma.Record storage ref"
+                          }
+                        },
+                        "id": 49,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "mineTime",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 3,
+                        "src": "504:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "baseExpression": {
+                            "id": 50,
+                            "name": "docHashes",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 11,
+                            "src": "530:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Record_$6_storage_$",
+                              "typeString": "mapping(bytes32 => struct Diploma.Record storage ref)"
+                            }
+                          },
+                          "id": 52,
+                          "indexExpression": {
+                            "id": 51,
+                            "name": "hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 39,
+                            "src": "540:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "530:15:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Record_$6_storage",
+                            "typeString": "struct Diploma.Record storage ref"
+                          }
+                        },
+                        "id": 53,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "blockNumber",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 5,
+                        "src": "530:27:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 54,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "503:55:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_uint256_$",
+                      "typeString": "tuple(uint256,uint256)"
+                    }
+                  },
+                  "functionReturnParameters": 45,
+                  "id": 55,
+                  "nodeType": "Return",
+                  "src": "496:62:0"
+                }
+              ]
+            },
+            "functionSelector": "4cf00d3f",
+            "id": 57,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "findDocHash",
+            "nameLocation": "426:11:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "mutability": "mutable",
+                  "name": "hash",
+                  "nameLocation": "446:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "438:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "437:14:0"
+            },
+            "returnParameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "473:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "473:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "479:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 43,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "472:12:0"
+            },
+            "scope": 58,
+            "src": "417:149:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 59,
+        "src": "60:509:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:536:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xc74d539e818bAdCa3CAE02f31C8C5491C0F5F9E4",
+      "transactionHash": "0x68a41d6024d74dbfd56a9c733400ccfa88368c9342891431533229e1e4d80c89"
+    }
+  },
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-05-03T14:41:52.427Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
