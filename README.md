@@ -9,8 +9,9 @@ Setting up and using a local Ethereum blockchain to store document hashes.
 
 ![Version](https://img.shields.io/badge/NodeJS-16.13.1-red.svg)
 ![Version](https://img.shields.io/badge/NPM-8.1.2-yellow.svg)
-![Version](https://img.shields.io/badge/Truffle-5.4.28-blue.svg)
 ![Version](https://img.shields.io/badge/Solidity-0.8.0-green.svg)
+![Version](https://img.shields.io/badge/Truffle-5.4.28-blue.svg)
+![Version](https://img.shields.io/badge/Ganache-2.5.4-brown.svg)
 
 ---
 
@@ -47,9 +48,12 @@ Setting up and using a local Ethereum blockchain to store document hashes.
 
 This is a sample project for storing and reading document hashes from / to the **Ethereum blockchain**.
 
-This project is for **testing purpose only**.
+> [!IMPORTANT]
+> This project is for **testing purpose only**.
+> 
+> The **smart contract** is **not** intended to be deployed on the Ethereum main network.
 
-The **smart contract** is **not** intended to be deployed on the Ethereum main network.
+You may also take a look at the [eth-hash-app](https://github.com/Yann39/eth-hash-app) project to interact with the blockchain using Java.
 
 # Getting started
 
@@ -135,10 +139,14 @@ To install Truffle : `npm install -g truffle`
   ```
 - run tests : `truffle test ./test/diploma.js`
 
+You can at any moment explore the blockchain via Ganache UI :
+
+<img src="screen-ganache.png" alt="Ganache transactions screenshot">
+
 ### Java
 
-- Create new **Spring Boot** project (i.e. _eth-hash-app_)
-- Add **ZK** stuff
+To interact with the blockchain via Java :
+
 - Add Java Ethereum **Web3j** dependency :
   ```xml
   <dependency>
@@ -151,7 +159,8 @@ To install Truffle : `npm install -g truffle`
   - interact with the deployed contract using raw methods
   - use **Web3j command line tools** or **Web3j Maven plugin** (requires **solc** compiler) to generate a
     contract wrapper (Java class) that can be used to interact with the contract
-- See [eth-hash-app](https://github.com/Yann39/eth-hash-app) project for more details
+
+See [eth-hash-app](https://github.com/Yann39/eth-hash-app) project for more details.
 
 ## Installation
 
