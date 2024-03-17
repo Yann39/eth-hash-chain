@@ -1,11 +1,11 @@
-<img src="ethereum-logo-grey.svg" width="380" alt="Ethereum logo">
+<img src="doc/ethereum-logo-grey.svg" width="380" alt="Ethereum logo">
 
 # Local Ethereum blockchain to store document hashes
 
-Setting up and using a local Ethereum blockchain to store document hashes.
+Setting up and using a local **Ethereum blockchain** to store document hashes.
 
-![Version](https://img.shields.io/badge/version-1.0.2-2AAB92.svg)
-![Static Badge](https://img.shields.io/badge/Last%20update-05%20May%202022-blue)
+![Version](https://img.shields.io/badge/Version-1.0.2-2AAB92.svg)
+![Static Badge](https://img.shields.io/badge/Last_update-05_May_2022-blue)
 
 ![Version](https://img.shields.io/badge/NodeJS-16.13.1-red.svg)
 ![Version](https://img.shields.io/badge/NPM-8.1.2-yellow.svg)
@@ -29,19 +29,19 @@ Setting up and using a local Ethereum blockchain to store document hashes.
 <table>
   <tr>
     <td>
-        <img alt="Ganache logo" src="logo-ganache.svg" height="64"/>
+        <img alt="Ganache logo" src="doc/logo-ganache.svg" height="64"/>
     </td>
     <td>
-        <img alt="Truffle logo" src="logo-truffle.svg" height="64"/>
+        <img alt="Truffle logo" src="doc/logo-truffle.svg" height="64"/>
     </td>
     <td>
-        <img alt="Solidity logo" src="logo-solidity.svg" height="64"/>
+        <img alt="Solidity logo" src="doc/logo-solidity.svg" height="64"/>
     </td>
     <td>
-        <img alt="NodeJS logo" src="logo-nodejs.svg" height="64"/>
+        <img alt="NodeJS logo" src="doc/logo-nodejs.svg" height="64"/>
     </td>
     <td>
-        <img alt="NPM logo" src="logo-npm.svg" height="32"/>
+        <img alt="NPM logo" src="doc/logo-npm.svg" height="32"/>
     </td>
   </tr>
 </table>
@@ -141,7 +141,7 @@ To install Truffle : `npm install -g truffle`
 
 You can at any moment explore the blockchain via Ganache UI :
 
-<img src="screen-ganache.png" alt="Ganache transactions screenshot">
+<img src="doc/screen-ganache.png" alt="Ganache transactions screenshot">
 
 ### Java
 
